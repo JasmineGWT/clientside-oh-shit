@@ -1,9 +1,16 @@
 var h = require('hyperscript')
+var main = document.querySelector('main')
 
 console.log('welcome to oh-shit-youre-dying!!!!!!')
 
-var test = h('h2', {}, 'HEEELLLLOOOOO!')
+var title = h('h1', {}, "OH SHIT, YOU'RE DYING!")
+main.appendChild(title)
 
-var main = document.querySelector('main')
+var form = h('form', {action:"/results"},{method:"post"}, [
+  h('h3', {class: 'questionTitle'}, 'How old are you?'),
+  h('input', {type: 'text'},{name: 'q1'}),
+  h('h3', {class: 'questionTitle'}, 'What is your gender?')
 
-main.appendChild(test)
+])
+
+main.appendChild(form)
