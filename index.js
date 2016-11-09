@@ -1,7 +1,7 @@
 var h = require('hyperscript')
 var main = document.querySelector('main')
 
-console.log('welcome to oh-shit-youre-dying!!!!!!')
+console.log('Welcome to Oh Shit, Youre Dying!!!!!!')
 
 var smokerArray = [['nonSmoker', 'Not part of the #CancerCrew2K16'], ['smoker', '1-4'], ['smoker', '5-20'], ['posSmoker', 'Enough']]
 
