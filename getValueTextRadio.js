@@ -1,3 +1,5 @@
+var h = require('hyperscript')
+
 module.exports = function getValueTextRadio(array) {
   var radio = []
   for (var i = 0; i < array.length; i++) {
