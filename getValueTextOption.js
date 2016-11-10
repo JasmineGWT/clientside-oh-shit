@@ -1,8 +1,4 @@
-module.exports {
-  getValueTextOption
-}
-
-function getValueTextOption(array) {
+module.exports = function getValueTextOption(array) {
   var radio = []
   for (var i = 0; i < array.length; i++) {
     console.log("swagggg", array[i][1])
