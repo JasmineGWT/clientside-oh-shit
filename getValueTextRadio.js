@@ -6,7 +6,8 @@ module.exports = function getValueTextRadio(array) {
     console.log("swagggg", array[i][1])
     var value = array[i][0]
     var text = array[i][1]
-    radio.push(h('input', {type: 'radio'}, {name: 'q3'}, {value: value}, {id: 'q3_radio'}), h('lable', {for: value}, {id: 'q3_lable'}, text), h('br')
+    var nameId = array[i][2]
+    radio.push(h('input', {type: 'radio'}, {name: nameId}, {value: value}, {id: nameId}), h('lable', {for: value}, {id: nameId}, text), h('br')
     )
     }
     console.log(radio);
