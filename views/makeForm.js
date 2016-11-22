@@ -5,12 +5,13 @@ var doneRadios  = require('./doneRadio')
 var getValueTextRadio  = require('./getValueTextRadio')
 var whereAreYouFrom = require('./whereAreYouFrom')
 var getFormData = require('get-form-data')
+var getTimeLeft = require('../getTimeLeft')
 
 module.exports = function makeForm(smokers, drinkers, countries) {
   return h('form',{id: "myForm", onsubmit: function(e) {
     e.preventDefault()
     var formData = getFormData(e.target)
-    console.log(formData)
+    getTimeLeft(formData)
   }},
   [
     h('h3', {className: 'questionTitle'}, 'What is your name?'),
@@ -37,10 +38,6 @@ module.exports = function makeForm(smokers, drinkers, countries) {
 
     h('h3', {className: 'questionTitle'}, 'Cheeky Tuesday night drinks, how much do you drink?'),
       getValueTextRadio(drinkers),
-        h('br'),
-
-    h('h3', {className: 'questionTitle'}, 'What is the current date? (YYYY-MM-DD)'),
-      h('input', {type: 'text'},{name: 'date'}),
         h('br'),
 
     h('input', {type:'submit'}, {value: 'Bruh, when am I dying?'}, {id: 'submit'})
