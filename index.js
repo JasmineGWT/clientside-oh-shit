@@ -6,7 +6,8 @@ var request = require('superagent')
 
 console.log('Welcome to Oh Shit, Youre Dying!!!!!!')
 
-var endpoint = 'http://api.population.io/1.0/countries'
+
+var endpoint = 'http://api.population.io/1.0/countries?format=json'
 
 function getCountries(callback){
   request.get(endpoint)
