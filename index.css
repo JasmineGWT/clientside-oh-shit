@@ -55,18 +55,35 @@ li {
   list-style: none;
 }
 
-#q2_radio {
+#doneNess_radio {
   margin: 11px;
 }
 
-#q2_lable {
+#doneNess_lable {
   margin: 10px;
 }
 
 #submit {
+  font-size: 100%;
+  width: 40%;
+  height: auto;
   margin-top: 20px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
 }
 
-#titleBack {
-
+#submit:hover {
+  background-color: #780000;
+  color: white;
 }
+
+/*input {
+  width: 40%;
+  background-color: black;
+  color: white;
+}
+
+input:focus {
+  border: 3px solid #780000;
+}*/

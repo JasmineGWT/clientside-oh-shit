@@ -13,27 +13,36 @@ module.exports = function makeForm(smokers, drinkers, countries) {
     console.log(formData)
   }},
   [
-    h('h3', {class: 'questionTitle'}, 'What is your name?'),
+    h('h3', {className: 'questionTitle'}, 'What is your name?'),
       h('input', {type: 'text'},{name: 'name'}),
 
-    h('h3', {class: 'questionTitle'}, 'How old are you?'),
-      h('input', {type: 'text'},{name: 'q1'}),
+    h('h3', {className: 'questionTitle'}, 'What is your D.O.B? (eg. 23 September 1977)'),
+      h('input', {type: 'text'},{name: 'age'}),
 
-    h('h3', {class: 'questionTitle'}, 'Where are you from?'),
-      h('select.whereAreYouFrom', {name: 'q3'}, whereAreYouFrom(countries)),
+    h('h3', {className: 'questionTitle'}, 'Are you male or female?'),
+      h('select.sex', {name: 'sex'},
+        h('option', {value: 'female'}, 'Female'),
+        h('option', {value: 'male'}, 'Male')),
 
-    h('h3', {class: 'questionTitle'}, 'On a scale of 1 to 10 how done are you?'),
+    h('h3', {className: 'questionTitle'}, 'Where are you from?'),
+      h('select.whereAreYouFrom', {name: 'nationality'}, whereAreYouFrom(countries)),
+
+    h('h3', {className: 'questionTitle'}, 'On a scale of 1 to 10 how done are you?'),
       doneLabels(),
         h('br'),
       doneRadios(),
 
-    h('h3', {class: 'questionTitle'}, 'How many durries do you smoke a day?'),
+    h('h3', {className: 'questionTitle'}, 'How many durries do you smoke a day?'),
       getValueTextRadio(smokers),
 
-    h('h3', {class: 'questionTitle'}, 'Cheeky Tuesday night drinks, how much do you drink?'),
+    h('h3', {className: 'questionTitle'}, 'Cheeky Tuesday night drinks, how much do you drink?'),
       getValueTextRadio(drinkers),
         h('br'),
-        
+
+    h('h3', {className: 'questionTitle'}, 'What is the current date? (YYYY-MM-DD)'),
+      h('input', {type: 'text'},{name: 'date'}),
+        h('br'),
+
     h('input', {type:'submit'}, {value: 'Bruh, when am I dying?'}, {id: 'submit'})
   ])
 }
