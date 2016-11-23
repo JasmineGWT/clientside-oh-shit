@@ -15,7 +15,6 @@ module.exports = function (dateString, drink, smoke, yearsLeft) {
     return h('h3.yearsLeft', {}, `You would have ${dateString} left`,
   h('h2', {id: 'legit'}, `However since you smoke, even though you don't drink you still only have ${yearsLeft - 20} years left!`),
   h('h3', {}, `If you drank too you'd have ${yearsLeft - 30} years left`))
-)
   }
   else {
     return h('h3.yearsLeft', {}, `You have ${dateString} left`),
