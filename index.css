@@ -80,7 +80,6 @@ li {
 }
 
 .resultsOfQuiz {
-  padding: 0.3%;
   margin: 2%;
   margin-bottom: 9%;
 }
@@ -102,6 +101,6 @@ select {
   border-radius: 3px;
 }
 
-#howEnd:hover {
+#legit {
   color: #780000;
 }
