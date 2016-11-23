@@ -7,7 +7,7 @@ body {
   margin-right: 15%;
   margin-top: 0px;
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 14px;
   font-family: 'Raleway', sans-serif;
   background-color: black;
   color: white;
@@ -74,16 +74,21 @@ li {
 }
 
 #submit:hover {
-  background-color: #780000;
+  background-color: #212121;
   color: white;
+
 }
 
-/*input {
-  width: 40%;
+.resultsOfQuiz {
+  padding: 5%;
+  margin: 2%;
+  margin-bottom: 80%;
+}
+
+select {
   background-color: black;
   color: white;
-}
-
-input:focus {
   border: 3px solid #780000;
-}*/
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+}

@@ -6,14 +6,25 @@ var getValueTextRadio  = require('./getValueTextRadio')
 var whereAreYouFrom = require('./whereAreYouFrom')
 var getFormData = require('get-form-data')
 var getTimeLeft = require('../getTimeLeft')
+var showResults = require('./showResults')
+var main = document.querySelector('main')
+var morph = require('morphdom')
 
 module.exports = function makeForm(smokers, drinkers, countries) {
+
+
   return h('form',{id: "myForm", onsubmit: function(e) {
     e.preventDefault()
     var formData = getFormData(e.target)
     formData.age = formData.age.split(' ').join('+')
-    getTimeLeft(formData)
+    getTimeLeft(formData, function(deathData) {
+      var results = showResults(deathData, formData)
+      main.appendChild(results)
+      document.getElementById('myForm').remove()
+    })
   }},
+
+
   [
     h('h3', {className: 'questionTitle'}, 'What is your name?'),
       h('input', {type: 'text'},{name: 'name'}),

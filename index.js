@@ -3,7 +3,7 @@ var main = document.querySelector('main')
 var {smokers, drinkers} = require('./arrays')
 var makeForm = require('./views/makeForm')
 var request = require('superagent')
-
+var getTimeLeft = require('./getTimeLeft')
 console.log('Welcome to Oh Shit, Youre Dying!!!!!!')
 
 
