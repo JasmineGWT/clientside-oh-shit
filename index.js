@@ -1,7 +1,7 @@
 var h = require('hyperscript')
 var main = document.querySelector('main')
 var {smokers, drinkers} = require('./arrays')
-var makeForm = require('./makeForm')
+var makeForm = require('./views/makeForm')
 var request = require('superagent')
 
 console.log('Welcome to Oh Shit, Youre Dying!!!!!!')
