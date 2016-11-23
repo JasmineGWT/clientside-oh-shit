@@ -11,6 +11,7 @@ module.exports = function makeForm(smokers, drinkers, countries) {
   return h('form',{id: "myForm", onsubmit: function(e) {
     e.preventDefault()
     var formData = getFormData(e.target)
+    formData.age = formData.age.split(' ').join('+')
     getTimeLeft(formData)
   }},
   [
