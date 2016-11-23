@@ -2,7 +2,7 @@ var smokers = [
     ['nonSmoker', 'Not part of the #CancerCrew2K16', 'smokingStatus'],
     ['smoker', '1-4', 'smokingStatus'],
     ['smoker', '5-20', 'smokingStatus'],
-    ['posSmoker', 'Enough', 'smokingStatus']
+    ['smoker', 'Enough', 'smokingStatus']
 ]
 
 var drinkers = [
