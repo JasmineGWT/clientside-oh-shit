@@ -3,14 +3,13 @@ var getValueTextOption  = require('./getValueTextOption')
 var doneLabels  = require('./doneLabels')
 var doneRadios  = require('./doneRadio')
 var getValueTextRadio  = require('./getValueTextRadio')
-var whereAreYouFrom = require('./whereAreYouFrom')
 var getFormData = require('get-form-data')
 var getTimeLeft = require('../getTimeLeft')
 var showResults = require('./showResults')
 var main = document.querySelector('main')
 var morph = require('morphdom')
 
-module.exports = function makeForm(smokers, drinkers, countries) {
+module.exports = function makeForm(smokers, drinkers) {
 
 
   return h('form',{id: "myForm", onsubmit: function(e) {
@@ -36,9 +35,6 @@ module.exports = function makeForm(smokers, drinkers, countries) {
       h('select.sex', {name: 'sex'},
         h('option', {value: 'female'}, 'Female'),
         h('option', {value: 'male'}, 'Male')),
-
-    h('h3', {className: 'questionTitle'}, 'Where are you from?'),
-      h('select.whereAreYouFrom', {name: 'nationality'}, whereAreYouFrom(countries)),
 
     h('h3', {className: 'questionTitle'}, 'On a scale of 1 to 10 how done are you?'),
       doneLabels(),
