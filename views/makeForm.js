@@ -27,10 +27,10 @@ module.exports = function makeForm(smokers, drinkers, countries) {
 
   [
     h('h3', {className: 'questionTitle'}, 'What is your name?'),
-      h('input', {type: 'text'},{name: 'name'}),
+      h('input', {type: 'text'},{name: 'name'}, {id:'bruh'}),
 
     h('h3', {className: 'questionTitle'}, 'What is your D.O.B? (eg. 23 September 1977)'),
-      h('input', {type: 'text'},{name: 'age'}),
+      h('input', {type: 'text'},{name: 'age'}, {id: 'bruh'}),
 
     h('h3', {className: 'questionTitle'}, 'Are you male or female?'),
       h('select.sex', {name: 'sex'},
