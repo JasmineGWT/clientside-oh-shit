@@ -79,11 +79,6 @@ li {
 
 }
 
-.resultsOfQuiz {
-  margin: 2%;
-  margin-bottom: 9%;
-}
-
 select {
   background-color: black;
   color: white;
@@ -102,5 +97,5 @@ select {
 }
 
 #legit {
-  color: #780000;
+  color: #b30000;
 }

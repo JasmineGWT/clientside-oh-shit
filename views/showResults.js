@@ -6,6 +6,6 @@ module.exports = function showResults(deathData, formData) {
   return h('div', {className: 'resultsOfQuiz'},
     h('h3.greeting', {}, `Hey ${formData.name}, you're dying!`),
     however(deathData.dateString, formData.drinkingStatus, formData.smokingStatus, deathData.date.years),
-    h('h3', {}, 'Have a good day, because you never know, I might be wrong and today is your last')
+    h('h3', {}, 'Have a good day, since you never know, I might be wrong and today is your last')
   )
 }
