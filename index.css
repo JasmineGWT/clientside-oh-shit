@@ -99,3 +99,54 @@ select {
 #legit {
   color: #b30000;
 }
+@media screen and (max-width: 780px) {
+  body {
+    background-image: none;
+  }
+
+  .inner-stuff {
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 0px;
+    padding: 50px;
+    font-size: 7px;
+    font-family: 'Raleway', sans-serif;
+    background-color: black;
+    color: white;
+    font-size: 23px;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 50px;
+    color: #b30000;
+    text-shadow: none;
+    margin-bottom: 7%;
+    margin-top: 7px;
+  }
+
+  #doneNess_radio {
+    margin: 7px;
+  }
+
+  #doneNess_lable {
+    margin: 6px;
+  }
+
+  #submit {
+    font-size: 50%;
+    width: 100%;
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+  }
+
+  h3 {
+    font-size: 80%;
+  }
+
+  #legit {
+    font-size: 80%;
+  }
+}
