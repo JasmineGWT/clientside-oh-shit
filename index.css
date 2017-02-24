@@ -1,11 +1,6 @@
-body {
-  background-image: url('http://www.sharewarejunkies.com/images-8/dance.gif');
-}
+body {}
 
 .inner-stuff {
-  margin-left: 15%;
-  margin-right: 15%;
-  margin-top: 0px;
   padding: 50px;
   font-size: 14px;
   font-family: 'Raleway', sans-serif;
@@ -13,31 +8,29 @@ body {
   color: white;
   font-size: 23px;
   text-align: center;
+  width: 57vw;
+  margin: 0;
+}
+
+.left-images {
+  width: 15vw;
+  height: 200vh;
+  float: left;
+  background-image: url('http://www.sharewarejunkies.com/images-8/dance.gif');
+}
+
+.right-images {
+  width: 15vw;
+  height: 200vh;
+  float: right;
+  background-image: url('http://www.sharewarejunkies.com/images-8/dance.gif');
+  top: 0;
 }
 
 h1 {
   font-size: 70px;
-  color:silver;
-  text-shadow:
-  4px 4px 1px #300000,
-  4px 6px 1px #400000,
-  4px 8px 1px #500000,
-  4px 10px 1px #600000,
-  4px 12px 1px #700000,
-  4px 14px 1px #800000,
-  4px 16px 1px #900000,
-  4px 18px 1px #A00000,
-  4px 20px 1px #B00000,
-  4px 22px 1px #C00000,
-  4px 24px 1px #D00000,
-  4px 26px 1px #E00000,
-  4px 28px 1px #F00000,
-  4px 30px 1px #FA0000,
-  4px 32px 1px #FB0000,
-  4px 34px 1px #FC0000,
-  4px 36px 1px #FD0000,
-  4px 38px 1px #FE0000,
-  4px 40px 2px #FF0000;
+  color: silver;
+  text-shadow: 4px 4px 1px #300000, 4px 6px 1px #400000, 4px 8px 1px #500000, 4px 10px 1px #600000, 4px 12px 1px #700000, 4px 14px 1px #800000, 4px 16px 1px #900000, 4px 18px 1px #A00000, 4px 20px 1px #B00000, 4px 22px 1px #C00000, 4px 24px 1px #D00000, 4px 26px 1px #E00000, 4px 28px 1px #F00000, 4px 30px 1px #FA0000, 4px 32px 1px #FB0000, 4px 34px 1px #FC0000, 4px 36px 1px #FD0000, 4px 38px 1px #FE0000, 4px 40px 2px #FF0000;
   margin-bottom: 7%;
   margin-top: 7px;
 }
@@ -49,7 +42,6 @@ a {
 h1:hover {
   color: white;
 }
-
 
 li {
   list-style: none;
@@ -76,7 +68,6 @@ li {
 #submit:hover {
   background-color: #212121;
   color: white;
-
 }
 
 select {
@@ -99,11 +90,11 @@ select {
 #legit {
   color: #b30000;
 }
+
 @media screen and (max-width: 780px) {
   body {
     background-image: none;
   }
-
   .inner-stuff {
     margin-left: 0%;
     margin-right: 0%;
@@ -116,7 +107,6 @@ select {
     font-size: 23px;
     text-align: center;
   }
-
   h1 {
     font-size: 50px;
     color: #b30000;
@@ -124,15 +114,12 @@ select {
     margin-bottom: 7%;
     margin-top: 7px;
   }
-
   #doneNess_radio {
     margin: 7px;
   }
-
   #doneNess_lable {
     margin: 6px;
   }
-
   #submit {
     font-size: 50%;
     width: 100%;
@@ -141,11 +128,9 @@ select {
     color: white;
     border-radius: 5px;
   }
-
   h3 {
     font-size: 80%;
   }
-
   #legit {
     font-size: 80%;
   }
